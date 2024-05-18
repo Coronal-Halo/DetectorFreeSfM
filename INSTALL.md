@@ -73,6 +73,7 @@ mkdir build && cd build && cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF && 
 cd path/to/your/desired/colmap/installation/directory
 git clone https://github.com/hxy-123/colmap.git
 cd colmap && mkdir build && cd build && cmake .. && make -j 
+(if encountering errors, remove the /build directory and perform the above 4 commands after deactivating the conda environment. See here: https://github.com/colmap/colmap/issues/188)
 
 # If you have sudo permission, you can install COLMAP by:
 sudo make install
